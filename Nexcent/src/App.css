@@ -5,7 +5,7 @@ body{
 }
 
 header{
-  z-index: 99;
+  z-index: 1001 !important;
 }
 
 .btn-primary{
