@@ -48,15 +48,13 @@ const Navbar = () => {
 
                 {/* nav items for large devices */}
                 <ul className='md:flex space-x-12 hidden'>
-                    {/* {
-                        navItems.map(({Link, path}) => <Link to={path} key={path} spy={true} smooth={true} offset={-100} className='block text-base text-gray-300'>{Link}</Link> )
-                    } */}
-                    <li className='block cursor-pointer text-base text-gray-900 hover:text-brandPrimary first:font-medium'>Home</li>
-                    <li className='block cursor-pointer text-base text-gray-900 hover:text-brandPrimary first:font-medium'>Service</li>
-                    <li className='block cursor-pointer text-base text-gray-900 hover:text-brandPrimary first:font-medium'>About</li>
-                    <li className='block cursor-pointer text-base text-gray-900 hover:text-brandPrimary first:font-medium'>Product</li>
-                    <li className='block cursor-pointer text-base text-gray-900 hover:text-brandPrimary first:font-medium'>Testimonial</li>
-                    <li className='block cursor-pointer text-base text-gray-900 hover:text-brandPrimary first:font-medium'>FAQ</li>
+                    {
+                        navItems.map((index, path) => 
+                            <Link className='block cursor-pointer text-base text-gray-900 hover:text-brandPrimary first:font-medium' to={index.path} key={index} spy={true} smooth={true} offset={-100}>
+                                {index.link}
+                            </Link>
+                        )
+                    }
                 </ul>
 
                 {/* button for large devices */}
@@ -79,15 +77,14 @@ const Navbar = () => {
 
             {/* nav items for mobile devices */}
             <div className={`space-y-4 px-4 mt-16 py-7 bg-brandPrimary ${isMenuOpen ? "block fixed top-0 left-0 right-0":"hidden"}`}>
-            {/* {
-                navItems.map(({Link, path}) => <Link to={path} key={path} spy={true} smooth={true} offset={-100} className='block text-base text-gray-300'>{Link}</Link> )
-            } */}
-                    <li className='block text-base text-gray-800'>Home</li>
-                    <li className='block text-base text-white hover:text-brandPrimary'>Service</li>
-                    <li className='block text-base text-white hover:text-brandPrimary'>About</li>
-                    <li className='block text-base text-white hover:text-brandPrimary'>Product</li>
-                    <li className='block text-base text-white hover:text-brandPrimary'>Testimonial</li>
-                    <li className='block text-base text-white hover:text-brandPrimary'>FAQ</li>
+            {
+                        navItems.map((index, path) => 
+                            <Link className='block cursor-pointer text-base text-gray-900 hover:text-brandPrimary first:font-medium' to={index.path} key={index} spy={true} smooth={true} offset={-100}>
+                                {index.link}
+                            </Link>
+                        )
+                    }
+                    
             </div>
         </nav>
     </header>
