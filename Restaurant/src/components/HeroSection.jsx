@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section className="relative flex h-screen items-center justify-center">
       <div className="absolute inset-0 -z-20 w-full h-full overflow-hidden">
-        <video src={video} className="w-full h-full object-cover" muted autoplay loop playsInline ></video>
+        <video src={video} className="w-full h-full object-cover" muted autoPlay loop playsInline ></video>
       </div>
       <div className="absolute inset-0 -z-10  bg-gradient-to-b from-transparent from-70% to-black"></div>
       <div className="relative z-10 flex h-screen flex-col justify-end pb-20">
