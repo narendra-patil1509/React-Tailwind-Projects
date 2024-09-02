@@ -4,3 +4,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* apply font to all content body */
+@layer base {
+    body{
+        @apply font-body;
+    }
+    h1,h2,h3{
+        @apply font-display text-gray-600 font-medium;
+    }
+}
