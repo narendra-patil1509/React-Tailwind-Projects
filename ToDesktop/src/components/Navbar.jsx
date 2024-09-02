@@ -33,17 +33,17 @@ const Navbar = () => {
         <i className='fa-solid fa-bars text-gray-600'></i>
       </button>
 
-      <div id='nav-dialog' className={`fixed bg-white z-10 ${menuBar? 'md:hidden': ''} inset-0 p-3`} >
+      <div id='nav-dialog' className={`fixed hidden bg-white z-10 ${menuBar? 'md:hidden': ''} inset-0 p-3`} >
         <div id='nav-bar' className='flex justify-between'>
             <a href="#" id='brand' className='flex gap-2 items-center'>
                 <img className='object-cover max-w-12 max-h-12' src={brand} alt="logo" />
                 <span className='text-lg font-medium font-display'>ToDesktop</span>
             </a>
-            <button className={`p-2 ${menuBar? 'md:hidden': 'md:block'}`} onClick={handleMenuBar}>
+            <button className={`p-2  ${menuBar? 'md:hidden': 'md:block'}`} onClick={handleMenuBar}>
                 <i className='fa-solid text-gray-600 fa-xmark'></i>
             </button>
         </div>
-        <div className='mt-6'>
+        <div className='mt-6 '>
             <a href="#" className='font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg'>Pricing</a>
             <a href="#" className='font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg'>Docs</a>
             <a href="#" className='font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg'>ChangeLog</a>
