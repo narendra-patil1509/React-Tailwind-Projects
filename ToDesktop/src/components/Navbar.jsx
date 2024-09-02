@@ -13,7 +13,7 @@ const Navbar = () => {
     }
   return (
     <nav className='p-3 flex bg-white justify-between items-center'>
-      <a href="#" id='brand' className='flex gap-2 items-center'>
+      <a href="#" id='brand' className='flex gap-2 items-center flex-1'>
         <img className='object-cover max-w-12 max-h-12' src={brand} alt="logo" />
         <span className='text-lg font-medium font-display'>ToDesktop</span>
       </a>
@@ -24,11 +24,13 @@ const Navbar = () => {
         <a href="#" className='font-medium hover:text-primary'>Blogs</a>
         <a href="#" className='font-medium hover:text-primary'>Login</a>
       </div>
-      <button className='hidden lg:flex items-center gap-2 border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600'>
-        <img src={asset1} alt="electrin-developer" />
-        <span>Electron Developers</span>
-        <i className='fa-solid fa-arrow-right'></i>
-      </button>
+      <div className='hidden lg:flex flex-1 justify-end'>
+        <button className='flex  items-center gap-2 border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600'>
+          <img src={asset1} alt="electrin-developer" />
+          <span>Electron Developers</span>
+          <i className='fa-solid fa-arrow-right'></i>
+        </button>
+      </div>
       <button className='p-2 lg:hidden' onClick={handleMenuBar}>
         <i className='fa-solid fa-bars text-gray-600'></i>
       </button>
