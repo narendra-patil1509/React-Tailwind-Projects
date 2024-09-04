@@ -25,7 +25,7 @@ const Navbar = () => {
         <a href="#" className='font-medium hover:text-primary'>Login</a>
       </div>
       <div className='hidden lg:flex flex-1 justify-end'>
-        <button className='flex  items-center gap-2 border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600'>
+        <button className='flex items-center gap-2 border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600'>
           <img src={asset1} alt="electrin-developer" />
           <span>Electron Developers</span>
           <i className='fa-solid fa-arrow-right'></i>
