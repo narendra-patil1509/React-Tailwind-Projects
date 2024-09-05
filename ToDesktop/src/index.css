@@ -7,6 +7,9 @@
 
 /* apply font to all content body */
 @layer base {
+    html,body{
+        overflow-x: hidden;
+    }
     body{
         @apply font-body;
     }
