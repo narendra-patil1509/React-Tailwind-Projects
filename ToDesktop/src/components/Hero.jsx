@@ -23,6 +23,8 @@ import asset23 from "../assets/asset 23.png";
 import asset24 from "../assets/asset 24.png";
 import asset25 from "../assets/asset 25.png";
 import asset26 from "../assets/asset 26.png";
+import asset28 from "../assets/asset 28.png";
+import asset37 from "../assets/asset 37.svg";
 
 import asset66 from "../assets/asset 66.svg";
 import { useEffect } from "react";
@@ -257,7 +259,7 @@ const Hero = () => {
         </div>
 
         {/* step by step */}
-        <div id="steps" className="flex flex-col gap-6 px-6 py-12 max-w-7xl mt-16 mx-auto lg:px-8 lg:mt-32">
+        <div id="steps" className="flex flex-col gap-6 container">
             <h2 className="text-5xl sm:font-semibold mb-14">How it Works</h2>
             <div id="step1" className="rounded-xl border px-8 py-12 flex flex-col lg:flex-row">
                 <div className="flex flex-col gap-6 lg:w-1/2">
@@ -365,6 +367,58 @@ const Hero = () => {
                 </div>
                 <div className="pt-12">
                     <img src={asset66} alt="" />
+                </div>
+            </div>
+        </div>
+
+        {/* bento grid */}
+        <div id="bento-grid" className="container">
+            <h2 className="text-5xl sm:font-semibold mb-14">ToDesktop handles the details</h2>
+            <div id="grid-container" className="flex flex-col gap-6 lg:grid lg-grid-cols-3" style={{"grid-auto-rows": ""}}>
+
+                <div className="row-start-1 row-end-3 group rounded-2xl p-[1px] bg-slate-100 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
+                    <div className="bg-white rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50">
+                        <h3 className="text-2xl">Native Notifications</h3>
+                        <img src={asset28} alt="" />
+                    </div>
+                </div>
+
+                <div className="row-start-1 row-end-4 group rounded-2xl p-[1px] bg-slate-100 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
+                    <div className="bg-white rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50">
+                        <h3 className="text-2xl">Auto Updates</h3>
+                        <p className="text-lg text center font-light">We’ll ensure the underlying browser is up to date and deliver performance improvements, security patches, & additional features.</p>
+                        <img src={asset28} alt="" />
+                    </div>
+                </div>
+
+                <div className="row-start-1 row-end-3 group rounded-2xl p-[1px] bg-slate-100 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
+                    <div className="bg-white rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50">
+                        <h3 className="text-2xl">Native Notifications</h3>
+                        <img src={asset28} alt="" />
+                    </div>
+                </div>
+
+                <div className="row-start-3 row-end-6 group rounded-2xl p-[1px] bg-slate-100 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
+                    <div className="bg-white rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50">
+                        <h3 className="text-2xl">Auto Updates</h3>
+                        <p className="text-lg text center font-light">We’ll ensure the underlying browser is up to date and deliver performance improvements, security patches, & additional features.</p>
+                        <img src={asset28} alt="" />
+                    </div>
+                </div>
+
+                <div className="row-start-4 row-end-6 group rounded-2xl p-[1px] bg-slate-100 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
+                    <div className="bg-white rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50">
+                        <h3 className="text-2xl">Native Notifications</h3>
+                        <img src={asset28} alt="" />
+                    </div>
+                </div>
+
+                <div className="row-start-3 row-end-6 group rounded-2xl p-[1px] bg-slate-100 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
+                    <div className="bg-white rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50">
+                        <h3 className="text-2xl">Auto Updates</h3>
+                        <p className="text-lg text center font-light">We’ll ensure the underlying browser is up to date and deliver performance improvements, security patches, & additional features.</p>
+                        <img src={asset28} alt="" />
+                    </div>
                 </div>
             </div>
         </div>
