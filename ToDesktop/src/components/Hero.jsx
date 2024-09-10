@@ -33,6 +33,7 @@ const Hero = () => {
     const line1 = document.getElementById('line1');
     const line2 = document.getElementById('line2');
     const line3 = document.getElementById('line3');
+    const line4 = document.getElementById('line4');
 
     const initialTranslateLTR = -48*4;
     const initialTranslateRTL = 36*4;
@@ -40,6 +41,7 @@ const Hero = () => {
     // setupIntersectionObserver(line1, true, 0.15);
     // setupIntersectionObserver(line2, false, 0.15);
     // setupIntersectionObserver(line3, true, 0.15);
+    // setupIntersectionObserver(line4, true, 0.15);
 
     const setupIntersectionObserver = (element, isLTR, speed)=> {
         const intersectionCallback = (entries)=> {
@@ -376,45 +378,45 @@ const Hero = () => {
             <h2 className="text-5xl sm:font-semibold mb-14">ToDesktop handles the details</h2>
             <div id="grid-container" className="flex flex-col gap-6 lg:grid lg-grid-cols-3" style={{"grid-auto-rows": ""}}>
 
-                <div className="row-start-1 row-end-3 group rounded-2xl p-[1px] bg-slate-100 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
-                    <div className="bg-white rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50">
+                <div className="row-start-1 row-end-3 group rounded-2xl p-[1px] bg-slate-200 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
+                    <div className="bg-slate-50 rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50">
                         <h3 className="text-2xl">Native Notifications</h3>
                         <img src={asset28} alt="" />
                     </div>
                 </div>
 
-                <div className="row-start-1 row-end-4 group rounded-2xl p-[1px] bg-slate-100 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
-                    <div className="bg-white rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50">
+                <div className="row-start-1 row-end-4 group rounded-2xl p-[1px] bg-slate-200 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
+                    <div className="bg-slate-50 rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50">
                         <h3 className="text-2xl">Auto Updates</h3>
                         <p className="text-lg text center font-light">We’ll ensure the underlying browser is up to date and deliver performance improvements, security patches, & additional features.</p>
                         <img src={asset28} alt="" />
                     </div>
                 </div>
 
-                <div className="row-start-1 row-end-3 group rounded-2xl p-[1px] bg-slate-100 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
-                    <div className="bg-white rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50">
+                <div className="row-start-1 row-end-3 group rounded-2xl p-[1px] bg-slate-200 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
+                    <div className="bg-slate-50 rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50">
                         <h3 className="text-2xl">Native Notifications</h3>
                         <img src={asset28} alt="" />
                     </div>
                 </div>
 
-                <div className="row-start-3 row-end-6 group rounded-2xl p-[1px] bg-slate-100 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
-                    <div className="bg-white rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50">
+                <div className="row-start-3 row-end-6 group rounded-2xl p-[1px] bg-slate-200 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
+                    <div className="bg-slate-50 rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50">
                         <h3 className="text-2xl">Auto Updates</h3>
                         <p className="text-lg text center font-light">We’ll ensure the underlying browser is up to date and deliver performance improvements, security patches, & additional features.</p>
                         <img src={asset28} alt="" />
                     </div>
                 </div>
 
-                <div className="row-start-4 row-end-6 group rounded-2xl p-[1px] bg-slate-100 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
-                    <div className="bg-white rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50">
+                <div className="row-start-4 row-end-6 group rounded-2xl p-[1px] bg-slate-200 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
+                    <div className="bg-slate-50 rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50">
                         <h3 className="text-2xl">Native Notifications</h3>
                         <img src={asset28} alt="" />
                     </div>
                 </div>
 
-                <div className="row-start-3 row-end-6 group rounded-2xl p-[1px] bg-slate-100 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
-                    <div className="bg-white rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50">
+                <div className="row-start-3 row-end-6 group rounded-2xl p-[1px] bg-slate-200 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
+                    <div className="bg-slate-50 rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50">
                         <h3 className="text-2xl">Auto Updates</h3>
                         <p className="text-lg text center font-light">We’ll ensure the underlying browser is up to date and deliver performance improvements, security patches, & additional features.</p>
                         <img src={asset28} alt="" />
@@ -422,6 +424,26 @@ const Hero = () => {
                 </div>
             </div>
         </div>
+
+        {/* Companies Feature Line */}
+        <div id="features-line" className="container mt-4">
+            <div className="border rounded-lg overflow-hidden flex justify-center p-4">
+                <div id="line4" className="flex gap-8 p-6">
+                    <h3 className="whitespace-nowrap my-0 x-2 text-2xl font-semibold">Custom Menus</h3>
+                    <span>.</span>
+                    <h3 className="whitespace-nowrap my-0 x-2 text-2xl font-semibold">Multi-window-support</h3>
+                    <span>.</span>
+                    <h3 className="whitespace-nowrap my-0 x-2 text-2xl font-semibold">Trays</h3>
+                    <span>.</span>
+                    <h3 className="whitespace-nowrap my-0 x-2 text-2xl font-semibold">Deep Linking</h3>
+                    <span>.</span>
+                    <h3 className="whitespace-nowrap my-0 x-2 text-2xl font-semibold">Download Analytics</h3>
+                    <span>.</span>
+                </div>
+            </div>
+        </div>
+
+
         <div className="h-[1000px]"></div>
     </main>
   )
