@@ -25,6 +25,7 @@ import asset25 from "../assets/asset 25.png";
 import asset26 from "../assets/asset 26.png";
 import asset28 from "../assets/asset 28.png";
 import asset37 from "../assets/asset 37.svg";
+import asset32 from "../assets/asset 32.svg";
 
 import asset66 from "../assets/asset 66.svg";
 import { useEffect } from "react";
@@ -439,6 +440,45 @@ const Hero = () => {
                     <span>.</span>
                     <h3 className="whitespace-nowrap my-0 x-2 text-2xl font-semibold">Download Analytics</h3>
                     <span>.</span>
+                </div>
+            </div>
+        </div>
+
+        {/* Testimonials */}
+        <div id="testimonials" className="container">
+            <h2 className="text-5xl sm:font-semibold md-14">Custom stories</h2>
+            <div className="rounded-xl border flex flex-col lg:flex-row items-end">
+                <div id="left" className="flex flex-col gap-12 p-8">
+                    <div className="h-4 w-fit">
+                        <img src={asset32} alt="" />
+                    </div>
+                    <h3 className="text-xl leading-relaxed">ClickUp used ToDesktop to get their desktop app in front of customers in days instead of months.</h3>
+                    <div id="tag-container" className="flex gap-3 flex-wrap">
+                        <div className="flex gap-2 items-center justify-center bg-yellow-50 w-fit border border-yellow-300 px-3 py-1 rounded-md text-yellow-800">
+                            <i className="fa-solid fa-check"></i>
+                            <span className="font-display font-medium">Chromeless UI</span>
+                        </div>
+                        <div className="flex gap-2 items-center justify-center bg-yellow-50 w-fit border border-yellow-300 px-3 py-1 rounded-md text-yellow-800">
+                            <i className="fa-solid fa-check"></i>
+                            <span className="font-display font-medium">Native spellcheck</span>
+                        </div>
+                        <div className="flex gap-2 items-center justify-center bg-yellow-50 w-fit border border-yellow-300 px-3 py-1 rounded-md text-yellow-800">
+                            <i className="fa-solid fa-check"></i>
+                            <span className="font-display font-medium">Task time in menubar</span>
+                        </div>
+                        <div className="flex gap-2 items-center justify-center bg-yellow-50 w-fit border border-yellow-300 px-3 py-1 rounded-md text-yellow-800">
+                            <i className="fa-solid fa-check"></i>
+                            <span className="font-display font-medium">Notification count in the dock                            </span>
+                        </div>
+                        <div className="flex gap-2 items-center justify-center bg-yellow-50 w-fit border border-yellow-300 px-3 py-1 rounded-md text-yellow-800">
+                            <i className="fa-solid fa-check"></i>
+                            <span className="font-display font-medium">Global hotkey to create task</span>
+                        </div>
+                    </div>
+                    <p className="text-lg font-light text-gray-500 ">“ToDesktop provided us with a <span className="text-black">polished desktop app</span> in no time. Their expert team guided us through a smooth migration from our outdated legacy desktop app, enabling us to deliver <span className="text-black">new and improved features</span> to our customers within days.”</p>
+                </div>
+                <div id="right">
+                    r
                 </div>
             </div>
         </div>
