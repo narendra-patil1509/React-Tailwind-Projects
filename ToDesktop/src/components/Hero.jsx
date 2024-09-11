@@ -26,6 +26,10 @@ import asset26 from "../assets/asset 26.png";
 import asset28 from "../assets/asset 28.png";
 import asset37 from "../assets/asset 37.svg";
 import asset32 from "../assets/asset 32.svg";
+import asset33 from "../assets/asset 33.jpeg";
+import asset34 from "../assets/asset 34.png";
+import asset35 from "../assets/asset 35.png";
+import asset36 from "../assets/asset 36.jpeg";
 
 import asset66 from "../assets/asset 66.svg";
 import { useEffect } from "react";
@@ -379,45 +383,45 @@ const Hero = () => {
             <h2 className="text-5xl sm:font-semibold mb-14">ToDesktop handles the details</h2>
             <div id="grid-container" className="flex flex-col gap-6 lg:grid lg-grid-cols-3" style={{"grid-auto-rows": ""}}>
 
-                <div className="row-start-1 row-end-3 group rounded-2xl p-[1px] bg-slate-200 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
-                    <div className="bg-slate-50 rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50">
+                <div className="row-start-1 row-end-3 group rounded-2xl gradient-hover-outer">
+                    <div className="bg-slate-50 rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center gradient-hover-inner">
                         <h3 className="text-2xl">Native Notifications</h3>
                         <img src={asset28} alt="" />
                     </div>
                 </div>
 
-                <div className="row-start-1 row-end-4 group rounded-2xl p-[1px] bg-slate-200 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
-                    <div className="bg-slate-50 rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50">
+                <div className="row-start-1 row-end-4 group rounded-2xl gradient-hover-outer">
+                    <div className="bg-slate-50 rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center gradient-hover-inner">
                         <h3 className="text-2xl">Auto Updates</h3>
                         <p className="text-lg text center font-light">We’ll ensure the underlying browser is up to date and deliver performance improvements, security patches, & additional features.</p>
                         <img src={asset28} alt="" />
                     </div>
                 </div>
 
-                <div className="row-start-1 row-end-3 group rounded-2xl p-[1px] bg-slate-200 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
-                    <div className="bg-slate-50 rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50">
+                <div className="row-start-1 row-end-3 group rounded-2xl gradient-hover-outer">
+                    <div className="bg-slate-50 rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center gradient-hover-inner">
                         <h3 className="text-2xl">Native Notifications</h3>
                         <img src={asset28} alt="" />
                     </div>
                 </div>
 
-                <div className="row-start-3 row-end-6 group rounded-2xl p-[1px] bg-slate-200 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
-                    <div className="bg-slate-50 rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50">
+                <div className="row-start-3 row-end-6 group rounded-2xl gradient-hover-outer">
+                    <div className="bg-slate-50 rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center gradient-hover-inner">
                         <h3 className="text-2xl">Auto Updates</h3>
                         <p className="text-lg text center font-light">We’ll ensure the underlying browser is up to date and deliver performance improvements, security patches, & additional features.</p>
                         <img src={asset28} alt="" />
                     </div>
                 </div>
 
-                <div className="row-start-4 row-end-6 group rounded-2xl p-[1px] bg-slate-200 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
-                    <div className="bg-slate-50 rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50">
+                <div className="row-start-4 row-end-6 group rounded-2xl gradient-hover-outer">
+                    <div className="bg-slate-50 rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center gradient-hover-inner">
                         <h3 className="text-2xl">Native Notifications</h3>
                         <img src={asset28} alt="" />
                     </div>
                 </div>
 
-                <div className="row-start-3 row-end-6 group rounded-2xl p-[1px] bg-slate-200 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
-                    <div className="bg-slate-50 rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50">
+                <div className="row-start-3 row-end-6 group rounded-2xl gradient-hover-outer">
+                    <div className="bg-slate-50 rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center gradient-hover-inner">
                         <h3 className="text-2xl">Auto Updates</h3>
                         <p className="text-lg text center font-light">We’ll ensure the underlying browser is up to date and deliver performance improvements, security patches, & additional features.</p>
                         <img src={asset28} alt="" />
@@ -447,8 +451,8 @@ const Hero = () => {
         {/* Testimonials */}
         <div id="testimonials" className="container">
             <h2 className="text-5xl sm:font-semibold md-14">Custom stories</h2>
-            <div className="rounded-xl border flex flex-col lg:flex-row items-end">
-                <div id="left" className="flex flex-col gap-12 p-8">
+            <div className="rounded-xl border flex flex-col lg:flex-row items-end mt-12">
+                <div className="flex flex-col gap-12 p-8">
                     <div className="h-4 w-fit">
                         <img src={asset32} alt="" />
                     </div>
@@ -476,9 +480,89 @@ const Hero = () => {
                         </div>
                     </div>
                     <p className="text-lg font-light text-gray-500 ">“ToDesktop provided us with a <span className="text-black">polished desktop app</span> in no time. Their expert team guided us through a smooth migration from our outdated legacy desktop app, enabling us to deliver <span className="text-black">new and improved features</span> to our customers within days.”</p>
+                    <div id="user-card" className="flex gap-4">
+                        <div className="w-12">
+                            <img src={asset33} className="rounded-full" alt="" />
+                        </div>
+                        <div className="flex flex-col">
+                            <h3>Zeb Evans</h3>
+                            <p className="text-gray-500">Founder & CEO, <a href="#" className="anchor-hover">ClickUp</a></p>
+                        </div>
+                    </div>
                 </div>
-                <div id="right">
-                    r
+                <div className="">
+                    <img src={asset34} className="pl-16" alt="" />
+                </div>
+            </div>
+            <div className="flex flex-col lg:flex-row justify-between gap-4 mt-6">
+                <div className="rounded-2xl p-6 gradient-hover-outer group flex flex-col gap-6">
+                    <div className="flex items-center gap-4">
+                        <div className="w-12 h-12 bg-blue-200 flex items-center justify-center rounded-full">
+                            <i className="fa-solid fa-code text-indigo-800"></i>
+                        </div>
+                        <h3 className="text-2xl font-semibold">Native APIs</h3>
+                    </div>
+                    <p className="text-lg font-light">What sets ToDesktop apart is its seamless integration with native APIs using our existing web codebase. By tapping into APIs like Tray and Notifications, we've crafted an exceptionally polished desktop user experience.</p>
+                    <div className="flex gap-4">
+                        <div className="flex">
+                            <div className="-mr-3 w-12 h-12 flex justify-center items-center rounded-full overflow-hidden border border-white">
+                                <img src={asset35} className="min-w-16 mi-h-16" alt="" />
+                            </div>
+                            <div className="w-12 h-12 rounded-full overflow-hidden border border-white">
+                                <img src={asset36} alt="" />
+                            </div>
+                        </div>
+                        <div className="flex flex-col">
+                            <h3>Rick Pastoor</h3>
+                            <a href="#" className="anchor-hover w-fit text-gray-500">Rise</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="rounded-2xl p-6 gradient-hover-outer group flex flex-col gap-6">
+                    <div className="flex items-center gap-4">
+                        <div className="w-12 h-12 bg-blue-200 flex items-center justify-center rounded-full">
+                            <i className="fa-solid fa-code text-indigo-800"></i>
+                        </div>
+                        <h3 className="text-2xl font-semibold">Native APIs</h3>
+                    </div>
+                    <p className="text-lg font-light">What sets ToDesktop apart is its seamless integration with native APIs using our existing web codebase. By tapping into APIs like Tray and Notifications, we've crafted an exceptionally polished desktop user experience.</p>
+                    <div className="flex gap-4">
+                        <div className="flex">
+                            <div className="-mr-3 w-12 h-12 flex justify-center items-center rounded-full overflow-hidden border border-white">
+                                <img src={asset35} className="min-w-16 mi-h-16" alt="" />
+                            </div>
+                            <div className="w-12 h-12 rounded-full overflow-hidden border border-white">
+                                <img src={asset36} alt="" />
+                            </div>
+                        </div>
+                        <div className="flex flex-col">
+                            <h3>Rick Pastoor</h3>
+                            <a href="#" className="anchor-hover w-fit text-gray-500">Rise</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="rounded-2xl p-6 gradient-hover-outer group flex flex-col gap-6">
+                    <div className="flex items-center gap-4">
+                        <div className="w-12 h-12 bg-blue-200 flex items-center justify-center rounded-full">
+                            <i className="fa-solid fa-code text-indigo-800"></i>
+                        </div>
+                        <h3 className="text-2xl font-semibold">Native APIs</h3>
+                    </div>
+                    <p className="text-lg font-light">What sets ToDesktop apart is its seamless integration with native APIs using our existing web codebase. By tapping into APIs like Tray and Notifications, we've crafted an exceptionally polished desktop user experience.</p>
+                    <div className="flex gap-4">
+                        <div className="flex">
+                            <div className="-mr-3 w-12 h-12 flex justify-center items-center rounded-full overflow-hidden border border-white">
+                                <img src={asset35} className="min-w-16 mi-h-16" alt="" />
+                            </div>
+                            <div className="w-12 h-12 rounded-full overflow-hidden border border-white">
+                                <img src={asset36} alt="" />
+                            </div>
+                        </div>
+                        <div className="flex flex-col">
+                            <h3>Rick Pastoor</h3>
+                            <a href="#" className="anchor-hover w-fit text-gray-500">Rise</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
