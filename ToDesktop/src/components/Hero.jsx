@@ -451,7 +451,7 @@ const Hero = () => {
         {/* Testimonials */}
         <div id="testimonials" className="container">
             <h2 className="text-5xl sm:font-semibold md-14">Custom stories</h2>
-            <div className="rounded-xl border flex flex-col lg:flex-row items-end mt-12">
+            <div className="rounded-xl border flex flex-col lg:flex-row items-end mt-6">
                 <div className="flex flex-col gap-12 p-8">
                     <div className="h-4 w-fit">
                         <img src={asset32} alt="" />
@@ -506,7 +506,7 @@ const Hero = () => {
                     <div className="flex gap-4">
                         <div className="flex">
                             <div className="-mr-3 w-12 h-12 flex justify-center items-center rounded-full overflow-hidden border border-white">
-                                <img src={asset35} className="min-w-16 mi-h-16" alt="" />
+                                <img src={asset35} className="min-w-16 min-h-16" alt="" />
                             </div>
                             <div className="w-12 h-12 rounded-full overflow-hidden border border-white">
                                 <img src={asset36} alt="" />
@@ -529,7 +529,7 @@ const Hero = () => {
                     <div className="flex gap-4">
                         <div className="flex">
                             <div className="-mr-3 w-12 h-12 flex justify-center items-center rounded-full overflow-hidden border border-white">
-                                <img src={asset35} className="min-w-16 mi-h-16" alt="" />
+                                <img src={asset35} className="min-w-16 min-h-16" alt="" />
                             </div>
                             <div className="w-12 h-12 rounded-full overflow-hidden border border-white">
                                 <img src={asset36} alt="" />
@@ -552,7 +552,7 @@ const Hero = () => {
                     <div className="flex gap-4">
                         <div className="flex">
                             <div className="-mr-3 w-12 h-12 flex justify-center items-center rounded-full overflow-hidden border border-white">
-                                <img src={asset35} className="min-w-16 mi-h-16" alt="" />
+                                <img src={asset35} className="min-w-16 min-h-16" alt="" />
                             </div>
                             <div className="w-12 h-12 rounded-full overflow-hidden border border-white">
                                 <img src={asset36} alt="" />
@@ -563,6 +563,26 @@ const Hero = () => {
                             <a href="#" className="anchor-hover w-fit text-gray-500">Rise</a>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div className="rounded-xl flex flex-col bg-black lg:flex-row items-end mt-6">
+                <div className="flex flex-col gap-4 p-8">
+                    <span className="text-gray-400 font-display font-medium">READY TO START BUILDING?</span>
+                    <h2 className="text-4xl text-white leading-tight">Create your desktop app for free*</h2>
+                    
+                    <p className="text-lg font-light text-gray-500 ">“ToDesktop provided us with a <span className="text-black">polished desktop app</span> in no time. Their expert team guided us through a smooth migration from our outdated legacy desktop app, enabling us to deliver <span className="text-black">new and improved features</span> to our customers within days.”</p>
+                    <div id="user-card" className="flex gap-4">
+                        <div className="w-12">
+                            <img src={asset33} className="rounded-full" alt="" />
+                        </div>
+                        <div className="flex flex-col">
+                            <h3>Zeb Evans</h3>
+                            <p className="text-gray-500">Founder & CEO, <a href="#" className="anchor-hover">ClickUp</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div className="">
+                    <img src={asset34} className="pl-16" alt="" />
                 </div>
             </div>
         </div>
