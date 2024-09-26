@@ -12,7 +12,7 @@ const Navbar = () => {
         
     }
   return (
-    <nav className='p-3 flex bg-white justify-between items-center'>
+    <nav className='p-3 flex bg-white justify-between items-center fixed top-0 right-0 left-0 z-20 shadow-md'>
       <a href="#" id='brand' className='flex gap-2 items-center flex-1'>
         <img className='object-cover max-w-12 max-h-12' src={brand} alt="logo" />
         <span className='text-lg font-medium font-display'>ToDesktop</span>
