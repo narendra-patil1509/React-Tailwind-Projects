@@ -30,6 +30,7 @@ import asset33 from "../assets/asset 33.jpeg";
 import asset34 from "../assets/asset 34.png";
 import asset35 from "../assets/asset 35.png";
 import asset36 from "../assets/asset 36.jpeg";
+import brand from '../assets/asset-0.png'
 
 import asset66 from "../assets/asset 66.svg";
 import { useEffect } from "react";
@@ -75,7 +76,7 @@ const Hero = () => {
         console.log();
     } 
   return (
-    <main>
+    <main className="mt-16">
         <div className="min-h-screen bg-gradient-to-b from-purple-50 via-orange-50 to-transparent" id="hero">
             <div className="max-w-4xl mx-auto px-6 pt-6 pb-32 flex flex-col sm:items-center sm:text-center sm:pt-12" id="hero-container">
                 <div className="flex items-center my-6 gap-2 border border-yellow-300 bg-yellow-50 rounded-lg px-3 py-1 w-fit shadow-md hover:shadow-lg hover:-translate-y-1 transition group" id="version-text">
@@ -266,9 +267,9 @@ const Hero = () => {
         </div>
 
         {/* step by step */}
-        <div id="steps" className="flex flex-col gap-6 container">
+        <div id="steps" className="flex flex-col gap-6 container mt-20">
             <h2 className="text-5xl sm:font-semibold mb-14">How it Works</h2>
-            <div id="step1" className="rounded-xl border px-8 py-12 flex flex-col lg:flex-row">
+            <div id="step1" className="rounded-xl border px-8 py-12 flex flex-col lg:flex-row justify-between">
                 <div className="flex flex-col gap-6 lg:w-1/2">
                     <span className="border border-yellow-300 bg-yellow-50 text-yellow-800 w-fit px-3 py-1 rounded-lg font-medium font-display">Step1</span>
                     <h3 className="text-4xl">Bootstrap straight from your web app</h3>
@@ -304,7 +305,7 @@ const Hero = () => {
                     <img src={asset66} alt="" />
                 </div>
             </div>
-            <div id="step2" className="rounded-xl border px-8 py-12 flex flex-col lg:flex-row">
+            <div id="step2" className="rounded-xl border px-8 py-12 flex flex-col lg:flex-row justify-between">
                 <div className="flex flex-col gap-6 lg:w-1/2">
                     <span className="border border-yellow-300 bg-yellow-50 text-yellow-800 w-fit px-3 py-1 rounded-lg font-medium font-display">Step2</span>
                     <h3 className="text-4xl">Bootstrap straight from your web app</h3>
@@ -340,7 +341,7 @@ const Hero = () => {
                     <img src={asset66} alt="" />
                 </div>
             </div>
-            <div id="step3" className="rounded-xl border px-8 py-12 flex flex-col lg:flex-row">
+            <div id="step3" className="rounded-xl border px-8 py-12 flex flex-col lg:flex-row justify-between">
                 <div className="flex flex-col gap-6 lg:w-1/2">
                     <span className="border border-yellow-300 bg-yellow-50 text-yellow-800 w-fit px-3 py-1 rounded-lg font-medium font-display">Step3</span>
                     <h3 className="text-4xl">Bootstrap straight from your web app</h3>
@@ -380,7 +381,7 @@ const Hero = () => {
 
         {/* bento grid */}
         <div id="bento-grid" className="container">
-            <h2 className="text-5xl sm:font-semibold mb-14">ToDesktop handles the details</h2>
+            <h2 className="h2-style">ToDesktop handles the details</h2>
             <div id="grid-container" className="flex flex-col gap-6 lg:grid lg-grid-cols-3" style={{"grid-auto-rows": ""}}>
 
                 <div className="row-start-1 row-end-3 group rounded-2xl gradient-hover-outer">
@@ -565,30 +566,207 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className="rounded-xl flex flex-col bg-black lg:flex-row items-end mt-6">
-                <div className="flex flex-col gap-4 p-8">
+            <div className="rounded-xl flex flex-col bg-black lg:flex-row mt-6 pt-6 lg:pt-10">
+                <div className="flex flex-col gap-4 lg:gap-8 p-8 lg:flex-1">
                     <span className="text-gray-400 font-display font-medium">READY TO START BUILDING?</span>
-                    <h2 className="text-4xl text-white leading-tight">Create your desktop app for free*</h2>
+                    <h2 className="text-4xl text-white leading-tight lg:text-5xl">Create your desktop app for free*</h2>
                     
-                    <p className="text-lg font-light text-gray-500 ">“ToDesktop provided us with a <span className="text-black">polished desktop app</span> in no time. Their expert team guided us through a smooth migration from our outdated legacy desktop app, enabling us to deliver <span className="text-black">new and improved features</span> to our customers within days.”</p>
-                    <div id="user-card" className="flex gap-4">
-                        <div className="w-12">
-                            <img src={asset33} className="rounded-full" alt="" />
-                        </div>
-                        <div className="flex flex-col">
-                            <h3>Zeb Evans</h3>
-                            <p className="text-gray-500">Founder & CEO, <a href="#" className="anchor-hover">ClickUp</a></p>
-                        </div>
-                    </div>
+                    <p className="text-lg font-light text-gray-500 lg:text-xl">ToDesktop Builder will take you step-by-step through the process of creating your first desktop app in just a few minutes.</p>
+                    <button className="bg-primary text-white py-3 rounded-lg hover:bg-opacity-90 flex justify-center items-center gap-4">
+                        <i className="fa-solid fa-download"></i>
+                        <span>Download ToDesktop Builder</span>
+                    </button>
+                    <p className="text-gray-400 text-xs italic leading-tight">*You can create a desktop app and run it on your computer for free. You will only be charged if you want to create a distributable app for your customers.</p>
                 </div>
-                <div className="">
+                <div className="lg:w-1/2">
                     <img src={asset34} className="pl-16" alt="" />
                 </div>
             </div>
         </div>
 
+        {/* Pricing */}
+        <div id="pricing" className="container">
+            <h2 className="text-5xl sm:font-semibold leading-normal max-w-2xl">Choose a plan that fits your needs</h2>
+            <div className="flex flex-col lg:flex-row mt-6 gap-6">
+                <div className="border flex-1 rounded-xl px-8 pt-12 pb-8 flex flex-col gap-6 lg:border-none lg:bg-slate-50">
+                    <h3 className="text-4xl">Free</h3>
+                    <p className="text-lg font-light">For personal use or testing your app before deploying to customers.</p>
+                    <p className="uppercase">Key Features</p>
+                    <ul className="space-y-3">
+                        <li className="flex items-center gap-4">
+                            <i className="fa-solid fa-check text-gray-500"></i>
+                            <span className="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                        <li className="flex items-center gap-4">
+                            <i className="fa-solid fa-check text-gray-500"></i>
+                            <span className="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                        <li className="flex items-center gap-4">
+                            <i className="fa-solid fa-xmark text-gray-500"></i>
+                            <span className="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                        <li className="flex items-center gap-4">
+                            <i className="fa-solid fa-xmark text-gray-500"></i>
+                            <span className="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                    </ul>
+                    <button className="border px-8 py-3 text-primary rounded-lg hover:border-gray-800 font-display font-medium">
+                        Read Docs
+                    </button>
+                </div>
 
-        <div className="h-[1000px]"></div>
+                <div className="border flex-1 rounded-xl px-8 pt-12 pb-8 flex flex-col gap-6 lg:border-none lg:bg-slate-50">
+                    <h3 className="text-4xl">Essential</h3>
+                    <p className="text-lg font-light">For simple desktop apps.</p>
+                    <p className="text-lg font-light"><span className="text-2xl font-semibold">$99</span>/month</p>
+                    <p className="uppercase">Key Features</p>
+                    <ul className="space-y-3">
+                        <li className="flex items-center gap-4">
+                            <i className="fa-solid fa-check text-gray-500"></i>
+                            <span className="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                        <li className="flex items-center gap-4">
+                            <i className="fa-solid fa-check text-gray-500"></i>
+                            <span className="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                        <li className="flex items-center gap-4">
+                            <i className="fa-solid fa-xmark text-gray-500"></i>
+                            <span className="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                        <li className="flex items-center gap-4">
+                            <i className="fa-solid fa-xmark text-gray-500"></i>
+                            <span className="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                    </ul>
+                    <button className="border px-8 py-3 text-primary rounded-lg hover:border-gray-800 font-display font-medium">
+                        Read Docs
+                    </button>
+                </div>
+
+                <div className="relative flex-1 border rounded-xl px-8 pt-12 pb-8 flex flex-col gap-6 lg:border-none lg:bg-slate-50">
+                    <p className="text-blue-800 text-sm bg-indigo-100 rounded-full w-fit px-4 py-2 font-display font-semibold absolute top-0 right-8 -translate-y-1/2">Most Popular</p>
+                    <h3 className="text-4xl">Professional</h3>
+                    <p className="text-lg font-light">For sophisticated desktop apps.</p>
+                    <p className="text-lg font-light"><span className="text-2xl font-semibold">$99</span>/month</p>
+                    <p className="uppercase">Key Features</p>
+                    <ul className="space-y-3">
+                        <li className="flex items-center gap-4">
+                            <i className="fa-solid fa-check text-gray-500"></i>
+                            <span className="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                        <li className="flex items-center gap-4">
+                            <i className="fa-solid fa-check text-gray-500"></i>
+                            <span className="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                        <li className="flex items-center gap-4">
+                            <i className="fa-solid fa-xmark text-gray-500"></i>
+                            <span className="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                        <li className="flex items-center gap-4">
+                            <i className="fa-solid fa-xmark text-gray-500"></i>
+                            <span className="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                    </ul>
+                    <button className="px-8 py-3 text-white bg-primary rounded-lg hover:bg-opacity-90 font-display font-medium">
+                        Read Docs
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        {/* FAQs */}
+        <div id="faq" className="container">
+            <h2 className="h2-style">FAQs</h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 mt-6 gap-6 items-start">
+                <div className="group rounded-xl border border-gray-200 bg-gray-50 p-6">
+                    <dt className="cursor-pointer flex justify-between items-center" aria-controls="faq1">
+                        <p className="font-semibold text-lg">Is ToDesktop For Me?</p>
+                        <i className="fa-solid fa-chevron-up -rotate-180 transition-transform"></i>
+                    </dt>
+                    <dd id="faq1" className="hidden text-lg font-light mt-6">
+                        <p>
+                        That depends! If you would like to distribute your web app to your users as a downloadable desktop app then ToDesktop is for you.
+                        </p>
+                    </dd>
+                </div>
+                <div className="group rounded-xl border border-gray-200 bg-gray-50 p-6">
+                    <dt className="cursor-pointer flex justify-between items-center" aria-controls="faq2">
+                        <p className="font-semibold text-lg">Is ToDesktop For Me?</p>
+                        <i className="fa-solid fa-chevron-up -rotate-180 transition-transform"></i>
+                    </dt>
+                    <dd id="faq2" className="hidden text-lg font-light mt-6">
+                        <p>
+                        That depends! If you would like to distribute your web app to your users as a downloadable desktop app then ToDesktop is for you.
+                        </p>
+                    </dd>
+                </div>
+                <div className="group rounded-xl border border-gray-200 bg-gray-50 p-6">
+                    <dt className="cursor-pointer flex justify-between items-center" aria-controls="faq3">
+                        <p className="font-semibold text-lg">Is ToDesktop For Me?</p>
+                        <i className="fa-solid fa-chevron-up -rotate-180 transition-transform"></i>
+                    </dt>
+                    <dd id="faq3" className="hidden text-lg font-light mt-6">
+                        <p>
+                        That depends! If you would like to distribute your web app to your users as a downloadable desktop app then ToDesktop is for you.
+                        </p>
+                    </dd>
+                </div>
+                <div className="group rounded-xl border border-gray-200 bg-gray-50 p-6">
+                    <dt className="cursor-pointer flex justify-between items-center" aria-controls="faq4">
+                        <p className="font-semibold text-lg">Is ToDesktop For Me?</p>
+                        <i className="fa-solid fa-chevron-up -rotate-180 transition-transform"></i>
+                    </dt>
+                    <dd id="faq4" className="hidden text-lg font-light mt-6">
+                        <p>
+                        That depends! If you would like to distribute your web app to your users as a downloadable desktop app then ToDesktop is for you.
+                        </p>
+                    </dd>
+                </div>
+                <div className="group rounded-xl border border-gray-200 bg-gray-50 p-6">
+                    <dt className="cursor-pointer flex justify-between items-center" aria-controls="faq5">
+                        <p className="font-semibold text-lg">Is ToDesktop For Me?</p>
+                        <i className="fa-solid fa-chevron-up -rotate-180 transition-transform"></i>
+                    </dt>
+                    <dd id="faq5" className="hidden text-lg font-light mt-6">
+                        <p>
+                        That depends! If you would like to distribute your web app to your users as a downloadable desktop app then ToDesktop is for you.
+                        </p>
+                    </dd>
+                </div>
+                <div className="group rounded-xl border border-gray-200 bg-gray-50 p-6">
+                    <dt className="cursor-pointer flex justify-between items-center" aria-controls="faq6">
+                        <p className="font-semibold text-lg">Is ToDesktop For Me?</p>
+                        <i className="fa-solid fa-chevron-up -rotate-180 transition-transform"></i>
+                    </dt>
+                    <dd id="faq6" className="hidden text-lg font-light mt-6">
+                        <p>
+                        That depends! If you would like to distribute your web app to your users as a downloadable desktop app then ToDesktop is for you.
+                        </p>
+                    </dd>
+                </div>
+            </div>
+        </div>
+
+        <footer className="container">
+            <div className="rounded-lg border lg:border-none lg:bg-gray-50 bg-gray-50 flex flex-col lg:flex-row-reverse items-center px-8 py-12 gap-8">
+                <a href="#" className="font-light font-display">Documentation</a>
+                <div className="flex gap-8 text-lg">
+                    <a href="#" className="text-gray-600 hover:text-gray-900"><i className="fa-brands fa-twitter"></i></a>
+                    <a href="#" className="text-gray-600 hover:text-gray-900"><i className="fa-brands fa-github"></i></a>
+                </div>
+                <a href="#" id="brand" className="flex gap-2 items-center flex-1">
+                    <img className="object-cover max-w-12 max-h-12" src={brand} alt="Logo" />
+                    <span className="text-lg font-medium font-display">ToDesktop</span>
+                </a>
+            </div>
+            <div id="sub-footer" className="flex flex-col gap-6 items-center justify-center my-12">
+                <div className="flex gap-2 items-center">
+                    <img className="w-4 h-4" src={asset37} alt="Y-combinator"/>
+                    <p className="text-sm text-gray-600">A Y Combinator company.</p>
+                </div>
+                <p className="text-sm text-gray-400">© 2024 ToDesktop, Inc. All rights reserved.</p>
+            </div>
+        </footer>
     </main>
   )
 }
