@@ -5,12 +5,14 @@ import asset1 from '../assets/asset 1.svg'
 const Navbar = () => {
 
     const[menuBar, setMenuBar] = useState(false);
+    console.log(menuBar);
+    
 
-    const handleMenuBar = () => {
-        setMenuBar(!menuBar);
-        console.log(menuBar);
+    // const handleMenuBar = () => {
+    //     setMenuBar(!menuBar);
+    //     console.log(menuBar);
         
-    }
+    // }
   return (
     <nav className='p-3 flex bg-white justify-between items-center fixed top-0 right-0 left-0 z-20 shadow-md'>
       <a href="#" id='brand' className='flex gap-2 items-center flex-1'>
@@ -31,17 +33,17 @@ const Navbar = () => {
           <i className='fa-solid fa-arrow-right'></i>
         </button>
       </div>
-      <button className='p-2 lg:hidden' onClick={handleMenuBar}>
+      <button className='p-2 lg:hidden' onClick={()=> setMenuBar((prev) => !prev)}>
         <i className='fa-solid fa-bars text-gray-600'></i>
       </button>
 
-      <div id='nav-dialog' className={`fixed hidden bg-white z-10 ${menuBar? 'md:hidden': ''} inset-0 p-3`} >
+      <div id='nav-dialog' className={`fixed ${menuBar? 'hidden':'lg:hidden'} bg-white z-10 inset-0 p-3`} >
         <div id='nav-bar' className='flex justify-between'>
             <a href="#" id='brand' className='flex gap-2 items-center'>
                 <img className='object-cover max-w-12 max-h-12' src={brand} alt="logo" />
                 <span className='text-lg font-medium font-display'>ToDesktop</span>
             </a>
-            <button className={`p-2  ${menuBar? 'md:hidden': 'md:block'}`} onClick={handleMenuBar}>
+            <button className={`p-2  `} onClick={()=> setMenuBar((prev) => !prev)}>
                 <i className='fa-solid text-gray-600 fa-xmark'></i>
             </button>
         </div>
