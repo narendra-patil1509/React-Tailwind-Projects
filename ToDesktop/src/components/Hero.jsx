@@ -20,6 +20,7 @@ const Hero = () => {
     // setupIntersectionObserver(line2, false, 0.15);
     // setupIntersectionObserver(line3, true, 0.15);
     // setupIntersectionObserver(line4, true, 0.15);
+    // https://anuj-kumar-sharma.github.io/tailwind-landing-page/
 
     const setupIntersectionObserver = (element, isLTR, speed)=> {
         const intersectionCallback = (entries)=> {
